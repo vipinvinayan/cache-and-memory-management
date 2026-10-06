@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cache-and-memory-management"
+version = "0.1.0"
+description = "Comprehensive implementations and benchmarks of cache replacement and memory allocation algorithms."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Algorithm Engineer" }
+]
+keywords = [
+    "cache",
+    "memory-management",
+    "lru",
+    "lfu",
+    "arc",
+    "paging",
+    "buddy-system",
+    "slab-allocator",
+    "operating-systems",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: System :: Operating System",
+    "Topic :: Software Development :: Libraries",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "flake8>=6.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

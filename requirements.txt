@@ -1,0 +1,5 @@
+# Core library has zero external dependencies (pure Python standard library)
+# Development & Testing tools:
+pytest>=7.4.0
+pytest-cov>=4.1.0
+flake8>=6.1.0
